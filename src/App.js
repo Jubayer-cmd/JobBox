@@ -8,7 +8,7 @@ import auth from "./firebase/firebase.config";
 import routes from "./routes/routes";
 
 function App() {
-  console.log(process.env);
+  console.log("hss", process.env);
   const dispatch = useDispatch();
 
   useEffect(() => {

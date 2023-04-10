@@ -8,7 +8,7 @@ const store = configureStore({
     auth: authSlice,
   },
   middleware: (getDefaultMiddleware) => {
-    getDefaultMiddleware().concat(apiSlice.middleware);
+    return getDefaultMiddleware().concat(apiSlice.middleware);
   },
 });
 
